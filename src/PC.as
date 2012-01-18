@@ -9,10 +9,18 @@ package
 	public class PC extends FlxSprite 
 	{
 		[Embed(source = "../assets/pc.png")] private static var pcSprite:Class;
-		public function PC() 
+		[Embed(source = "../assets/isp.png")] private static var ispSprite:Class;
+		public function PC(home:Boolean = true) 
 		{
 			super();
-			this.loadGraphic(pcSprite, false, false, 64, 64);
+			if (home)
+			{
+				this.loadGraphic(pcSprite, false, false, 64, 64);
+			}
+			else
+			{
+				this.loadGraphic(ispSprite, false, false, 64, 64);
+			}
 		}
 		
 		public function checkInEthernet(X:int, Y:int):Boolean

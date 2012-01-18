@@ -59,12 +59,12 @@ package
 			level.loadMap(FlxTilemap.arrayToCSV(data, 52), FlxTilemap.ImgAuto, 0, 0, FlxTilemap.AUTO);
 			add(level);
 			
-			serverpc = new PC;
+			serverpc = new PC(false);
 			serverpc.x = level.width - (64 + 8);
 			serverpc.y = 8;
 			add(serverpc);
 			
-			homepc = new PC;
+			homepc = new PC(true);
 			homepc.x = 8;
 			homepc.y = level.height - (64 + 8);
 			add(homepc);
