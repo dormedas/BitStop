@@ -11,7 +11,7 @@ package
 		
 		public function Sopajam() 
 		{
-			super(800, 600, MenuState, 2);
+			super(400, 300, MenuState, 2);
 		}
 		
 	}
